@@ -9,40 +9,61 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <title>Pig Dice</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Pig Dice</h1>
+        <h1>PIG DICE</h1>
+        <div class="pig">
+          <img src="img/pig.png" alt="A drawing of a pig.">
+        </div>
         <div id="win">
         </div>
+      </div>
+      <div class="rules">
+        Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+        <ul>
+          <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+          <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+          <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+          <li>The first player to score 100 or more points wins.</li>
+        </ul>
       </div>
 
       <div class="row">
         <div class="col-md-6">
           <div id="player-one">
+            <h2>Player 1</h2>
+            <h3>You Rolled</h3>
             <p class="dice-one"></p>
             <form id="player-one-roll">
-              <button type="submit" class="btn btn-warning">Roll</button>
+              <button type="submit" class="btn btn-roll">Roll</button>
             </form>
             <form id="player-one-hold">
-              <button type="submit" class="btn btn-danger">Hold</button>
+              <button type="submit" class="btn btn-hold">Hold</button>
             </form>
+            <h3>Turn Total</h3>
             <p class="turn-total"></p>
+            <h3>Total Score</h3>
             <p class="score-total"></p>
           </div>
         </div>
         <div class="col-md-6">
           <div id="player-two">
+            <h2>Player 2</h2>
+            <h3>You Rolled</h3>
             <p class="dice-two"></p>
             <form id="player-two-roll">
-              <button type="submit" class="btn btn-info">Roll</button>
+              <button type="submit" class="btn btn-roll">Roll</button>
             </form>
             <form id="player-two-hold">
-              <button type="submit" class="btn btn-success">Hold</button>
+              <button type="submit" class="btn btn-hold">Hold</button>
             </form>
+            <h3>Turn Total</h3>
             <p class="turn-total-two"></p>
+            <h3>Total Score</h3>
             <p class="score-total-two"></p>
           </div>
         </div>

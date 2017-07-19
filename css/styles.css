@@ -1,0 +1,57 @@
+.pig {
+  display: none;
+}
+
+body {
+text-align: center;
+}
+
+ul {
+  text-align: left;
+  margin-left: 250px;
+}
+
+.rules {
+  font-style: italic;
+  color: #5f7f98;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 120px;
+}
+
+#win {
+  font-size: 60px;
+  color: black;
+}
+
+.jumbotron {
+  background-color: #ffddeb;
+  color: #5f7f98;
+}
+
+/*#player-one {
+  background-color: #9fbfd8;
+}*/
+
+.btn-hold {
+  background-color: #ff91ac;
+}
+
+.btn-roll {
+  background-color: #ffb7d2;
+}
+
+p {
+  font-size: 40px;
+  border: solid #000000;
+  /*padding: 35px;*/
+  margin: 0 230px 10px 230px;
+}
+
+.score-total, .score-total-two {
+  background-color: #f7ce5d;
+
+}

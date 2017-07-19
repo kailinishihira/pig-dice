@@ -23,6 +23,7 @@ Player.prototype.hold = function(){
   this.totalScore += this.turnScore;
   this.turnScore = 0;
   if (this.totalScore >= 100) {
+    $(".pig").show();
     $("#win").text(this.playerName + " WINS!");
   }
 }
@@ -47,8 +48,8 @@ $(function() {
     player1.hold();
 
     $(".score-total").text(player1.totalScore);
-    $(".dice-one").text("");
-    $(".turn-total").text("");
+    $(".dice-one").text(" ");
+    $(".turn-total").text(" ");
   });
 });
 
@@ -69,8 +70,8 @@ $(function() {
     player2.hold();
 
     $(".score-total-two").text(player2.totalScore);
-    $(".dice-two").text("");
-    $(".turn-total-two").text("");
+    $(".dice-two").text(" ");
+    $(".turn-total-two").text(" ");
   });
 
 });

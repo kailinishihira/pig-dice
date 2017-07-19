@@ -28,6 +28,16 @@ Player.prototype.hold = function(){
   }
 }
 
+function reset(){
+  $(".turn-total").text(" ");
+  $(".turn-total-two").text(" ");
+  $(".dice-one").text(" ");
+  $(".dice-two").text(" ");
+  $(".score-total").text(" ");
+  $(".score-total-two").text(" ");
+  $("#win").hide();
+}
+
 var player1 = new Player("Player 1", 0, 0, 0);
 var player2 = new Player("Player 2", 0, 0, 0);
 
@@ -74,4 +84,9 @@ $(function() {
     $(".turn-total-two").text(" ");
   });
 
+  $("#play-again").submit(function(event) {
+    event.preventDefault();
+
+    reset();
+  });
 });

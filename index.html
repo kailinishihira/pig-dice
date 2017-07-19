@@ -9,9 +9,46 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Pig Dice</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pig Dice</h1>
+        <div id="win">
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-6">
+          <div id="player-one">
+            <p class="dice-one"></p>
+            <form id="player-one-roll">
+              <button type="submit" class="btn btn-warning">Roll</button>
+            </form>
+            <form id="player-one-hold">
+              <button type="submit" class="btn btn-danger">Hold</button>
+            </form>
+            <p class="turn-total"></p>
+            <p class="score-total"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="player-two">
+            <p class="dice-two"></p>
+            <form id="player-two-roll">
+              <button type="submit" class="btn btn-info">Roll</button>
+            </form>
+            <form id="player-two-hold">
+              <button type="submit" class="btn btn-success">Hold</button>
+            </form>
+            <p class="turn-total-two"></p>
+            <p class="score-total-two"></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </body>
 </html>

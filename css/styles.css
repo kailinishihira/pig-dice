@@ -35,6 +35,13 @@ h1 {
   background-color: #9fbfd8;
 }*/
 
+.btn {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
 .btn-play{
   background-color: #5f7f98;
   color: white;
@@ -42,16 +49,20 @@ h1 {
 
 .btn-hold {
   background-color: #ff91ac;
+  float: right;
+  margin-right: 180px;
 }
 
 .btn-roll {
   background-color: #ffb7d2;
+  float: left;
+  margin-left: 180px;
 }
 
 p {
   font-size: 40px;
   border: solid #000000;
-  /*padding: 35px;*/
+  padding: 35px;
   margin: 0 230px 10px 230px;
 }
 
